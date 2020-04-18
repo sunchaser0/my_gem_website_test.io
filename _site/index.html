@@ -1,10 +1,536 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<head>
+<title>LaTeX4Web 1.4 OUTPUT</title>
+<style type="text/css">
+<!--
+ body {color: black;  background:"#FFCC99";  }
+ div.p { margin-top: 7pt;}
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.norm {line-height:normal;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td.sqrt {border-top:2 solid black;
+          border-left:2 solid black;
+          border-bottom:none;
+          border-right:none;}
+ table.sqrt {border-top:2 solid black;
+             border-left:2 solid black;
+             border-bottom:none;
+             border-right:none;}
+-->
+</style>
+</head>
+<body>
+
+
+\documentclass[10pt]article
+\usepackage[explicit]titlesec
+\usepackagesoul
+	\setul0ex
+\setlength<br>indent0pt
+\setlength<br>skip1em
+\usepackagehyphenat
+\usepackageragged2e
+\RaggedRight
+
+\usepackagegaramondx
+\usepackage[T1]fontenc
+\usepackageamsmath, amsthm
+\usepackagegraphicx
+
+\usepackagesoul
+\setul.6pt.4pt
+
+
+\usepackagegeometry
+ <font face=symbol>³</font> ometryvmargin=1in,1in, hmargin=.75in, .75in
+\usepackagefancyhdr
+\pagestylefancy
+\pagenumberinggobble
+<font face=symbol>Â</font>newcommand\headrulewidth0.0pt
+<font face=symbol>Â</font>newcommand\footrulewidth0.0pt
+
+\usepackage[labelfont=footnotesize,bf , textfont=footnotesize]caption
+<font face=symbol>Ç</font>tionsetuplabelformat=simple, labelsep=period
+\newcommand<font face=symbol>n</font>m\addtocounterequation1\tag\theequation
+<font face=symbol>Â</font>newcommand\theequation\arabicequation
+\makeatletter
+<font face=symbol>Â</font>newcommand\tagform@[1]\maketag@@@ <font face=symbol>i</font>gnorespaces \footnotesize\textbfEquation #1.\unskip \@@italiccorr
+\makeatother
+\setlength<font face=symbol>ò</font>extsep10pt
+\setlength\abovecaptionskip2pt
+\setlength\belowcaptionskip-10pt
+
+<font face=symbol>Â</font>newcommand\textfraction0.10
+<font face=symbol>Â</font>newcommandTfraction0.85
+<font face=symbol>Â</font>newcommand\bottomfraction0.85
+<font face=symbol>Â</font>newcommand\floatpagefraction0.90
+
+\titleformat\section
+  \normalfont\thesection1em\MakeUppercase\textbf#1
+\titlespacing<p><a name="toc.1"><h1>1&nbsp;0pt</h1>0pt-10pt
+\titleformat\subsection
+  \normalfont\thesubsection1em\textit#1
+\titlespacing<p><a name="toc.1.1"><h2>1.1&nbsp;0pt</h2>0pt-8pt
+<font face=symbol>Â</font>newcommand\baselinestretch1.15
+
+\makeatletter
+\newcommand\sixteen\@setfontsize\sixteen17pt6
+<font face=symbol>Â</font>newcommand\maketitle\bgroup\setlength<br>indent0pt
+\beginflushleft
+\sixteen<b>series \@title
+\medskip
+\endflushleft
+\egroup</b>
+\makeatother
+
+\usepackage[sort&compress]natbib
+\setlength\bibindent2em
+\makeatletter
+<font face=symbol>Â</font>newcommand\@biblabel[1]\textbf#1.\hfill
+\makeatother
+<font face=symbol>Â</font>newcommand\citenumfont[1]\textbf#1
+\bibpunct,&nbsp;s,,
+\setlength\bibsep0pt plus 0.3ex
+
+
+
+
+
+
+
+\setuldepths
+
+
+
+
+
+
+\pagestyleempty
+\begindocument
+
+\title\centering \Huge\ulNatural Language Processing
+\maketitle
+
+\begincenter
+<font size="+1">Introduction
+\endcenter
+
+<p><hr>
+
+\title\centering \LARGE\ulGlossary
+\maketitle
+
+<p><hr>
+
+
+
+\title\centering \LARGE\ulChapter X
+    \break
+    <font size="+2">\ulEdit Distancing, Phonetic Algorithms and N-Grams
+    </font>
+
+
+\maketitle
+
+\textbfBasic Vector Rules\newline
+\vspace*-0.35cm
+Vector values are either 0 or positive, multiplying a vector increases its magnitude rather than direction, and the triangle inequality holds: the shortest distance between any two points is found in a direct, straight line.
+
+\textbfBasic Vector Rules and the Minowski Distance:\newline
+\vspace*-0.35cm
+
+\textbfMinowski Distance:\newline
+\vspace*-0.35cm
+A generalized algorithm for finding the distance between data points points. Also known as Lp norm distance calculator. Often, using lower p values, like p = 1 or p = 2, has better results for high dimensional problems. \newline
+(<font face=symbol>å</font><sub>i=1</sub>  <sup>n</sup>  | x <sub>i</sub> <font face=symbol>-</font> y<sub>i</sub> | <sup>p</sup>) <sup>1/p</sup>
+</td>
+<td nowrap align=center>
+
+p -> 1: gives you Manhattan Distance
+p -> 2: gives you Euclidean Distance
+p -> <font face=symbol>¥</font>: gives you Chebychev Distance
+
+\textbfManhattan Distance\newline
+\vspace*-0.35cm
+It measures the distance between two points by travelling along orthogonal points . It is often better at dealing with high-dimensionality data than Euclidean distance is.
+\newline \emph Imagine travelling in Manhattan city: since there are buildings everywhere, you couldn<font face=symbol>¢</font>t travel in a straight line from building A to building B.
+\newline
+| (x<sub>1</sub> <font face=symbol>-</font> x<sub>2</sub> ) |  + | (y<sub>1</sub> <font face=symbol>-</font> y<sub>2</sub> ) |
+
+
+\vspace*0.35cm
+\textbfEuclidean Distance:\newline
+\vspace*-0.35cm
+Fact Checker! A simple way of finding how similar two objects are, by using their x and y attributes, and finding Pythagorean distance between the two points \newline
+<font face=symbol>Ö</font><span style="border-top:1 solid black;"><font face=symbol>å</font><sup>n</sup><sub>i=1</sub> (x<sub>i</sub> <font face=symbol>-</font> y<sub>i</sub>)<sup>2</sup></span>
+
+
+
+\textbfCosine Similarity:\newline
+\vspace*-0.35cm
+This finds the similarity between two data points.
+
+
+\textbfCosine Similarity:\newline
+\vspace*-0.35cm
+
+
+<h1>Edit Distancing</h1>
+This is a way of finding the minimum number of edits to be made on a word before it matches with another particular word.
+<h1>Usages</h1>
+It can be used for spell-checking, OCR (optical character recognition) and for finding approximate matches between words, as well as finding the similarity between DNA sequences in Bioinformatics.
+
+
+<p><a name="toc.2"><h1>2&nbsp;Levenshtein</h1>
+This is a way of finding how dissimilar two words are, providing the minimum number of edits to be made on a word before it matches with another particular word.
+
+
+
+
+<h2>\beginlstlisting</h2>
+
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+
+    #compute the bitwise xor matrix
+    M1 = bitxormatrix(genl1)
+    M2 = np.triu(bitxormatrix(genl2),1)
+
+    for i in range(m-1):
+        for j in range(i+1, m):
+            [r,c] = np.where(M2 == M1[i,j])
+            for k in range(len(r)):
+                VT[(i)*n + r[k]] = 1;
+                VT[(i)*n + c[k]] = 1;
+                VT[(j)*n + r[k]] = 1;
+                VT[(j)*n + c[k]] = 1;
+
+                if M is None:
+                    M = np.copy(VT)
+                else:
+                    M = np.concatenate((M, VT), 1)
+
+                VT = np.zeros((n*m,1), int)
+
+    return M
+\endlstlisting
+
+<p><a name="toc.3"><h1>3&nbsp;Longest Common Subsequence (LCS)</h1>
+This is a way of finding the minimum number of edits to be made on a word before it matches with another particular word.
+
+<p><a name="toc.4"><h1>4&nbsp;Hamming Distance</h1>
+This is used to find the distance between categorical values.
+
+<p><a name="toc.5"><h1>5&nbsp;Damerau\–Levenshtein Distance</h1>
+This is a way of finding the minimum number of edits to be made on a word before it matches with another particular word.
+
+<p><a name="toc.6"><h1>6&nbsp;Jaro Distance</h1>
+This is a way of finding the minimum number of edits to be made on a word before it matches with another particular word.
+
+<p><a name="toc.7"><h1>7&nbsp;Bag Distance</h1>
+This is a cost-effective way of getting an approximate edit distance.
+
+First, the bag distance can be calculated to get Euclidean
+\beginflushleft
+\textbf\hspace1.2 cm Time <font face=symbol>®</font> \hspace0.5cm
+\(\mathcalO(length(string1) + length(string2))\)
+
+\endflushleft
+
+
+
+\setcountersection0
+
+
+
+
+<p><hr>
+
+<h1>Phonetic Algorithms</h1>
+This is a way of encoding text to a phonetic representation.
+Give general description, high-level summary, so that content can point to ideas beyond just the next list.
+
+<h1>Soundex</h1>
+
+<h1>Metaphone \& Double Metaphone</h1>
+
+<h1>Phonex \& Phonix</h1>
+
+<p><hr>
+
+
+\title\centering \LARGE\ulChapter Y
+    \break
+    <font size="+2">\ulNamed Entity Recognition
+    </font>
+\maketitle
+
+
+
+<h1>Named Entity Recognition</h1>
+This provides a way of identifying specific entities, such as people, organisations, and objects, within unstructured data, such as natural text in a news article.
+
+
+
+\title\centering \LARGE\ulChapter Z
+    \break
+    <font size="+2">\ulSyntactical Tools
+    </font>
+\maketitle
+
+<h1>Grammar Induction</h1>
+This is using machine learning to generate a formal set of rules about how language is be structured i.e description of a syntax.
+<h1>Lemmatization</h1>
+This is a way of breaking down a word into its true base form i.e strpping the prefix and suffix of the word.
+<h1>Stemming</h1>
+This is a way of breaking down a word into a base form i.e stripping the prefix and suffix of the word. However, unlike Lemmatization, this "base form" may not be a real word.
+<h1>Morphological (text) Segmentation</h1>
+This is the act of separating words into individual units of grammar, morphemes. Since English has a fairly simple morphology, i.e no complicated word inflections, it is possible to model all possible forms of a word as separate words.
+
+<h1>Parts of Speech Tagging (POS)</h1>
+This is the act of determining which part of speech a word is, e.g subject, object, noun, adjective, adverb, conjunction, etc.
+
+<h1>Parsing</h1>
+This is breaking down a string or sentence into a Tree of Nodes, in other words, using grammatical analysis to identify syntax.
+
+<p><a name="toc.8"><h1>8&nbsp;Dependency Parsing</h1>
+This parsing method is simpler than Constituency Parsing
+<p><a name="toc.9"><h1>9&nbsp;Constituency Parsing</h1>
+<p><a name="toc.10"><h1>10&nbsp;Context-Free Grammar (PCFG)</h1>
+<p><a name="toc.11"><h1>11&nbsp;Stochastic grammar</h1>
+
+<p><hr>
+
+\title\centering \LARGE\ulChapter K
+    \break
+    <font size="+2">\ulRepresentation and Vectorization
+    </font>
+\maketitle
+
+<h1>Tokenization</h1>
+<h1>Stop-words</h1>
+It is not always beneficial to filter out stop words, because some times they give important context.
+<h1>Bag of Words</h1>
+<h1>Term-Frequency Inverse-Document Frequency</h1>
+This gives a measure of how importance words are to a particular document.
+
+<h1>Zipf<font face=symbol>¢</font>s Law</h1>
+The frequency of a word is inversely proportional to its rank in a given document*
+
+
+
+\title\centering \LARGE\ulChapter U
+    \break
+    <font size="+2">\ulTransformers Models**
+    </font>
+\maketitle
+
+<h1>Attention Mechanism</h1>
+This ignores order of words in a sentence and instead converts each word in the sentence into both a column and a record, showing any correlation between each word, ignoring the order of words.
+
+<h1>Transformer models</h1>
+Can be bi-directional n-grams..
+
+
+\title\centering \LARGE\ulChapter V
+    \break
+    <font size="+2">\ulApplied methods
+    </font>
+\maketitle
+
+<h1>Upstream-Downstream Tasks</h1>
+This is when a model is trained on a specific set of vectors, e.g an upstream task, and is then used on tasks that consist of a different set of input vectors, i.e it<font face=symbol>¢</font>s a downstream task.
+
+<h1>Genetic Algorithms</h1>
+Used to reduce dimensionality when finding matches in large datassets
+
+In-text reference citations should support statements made on behalf of others.<a href="#bib.0">[0]</a> See detailed comments about references on the next page.
+
+\ulTo underline a portion of text, use the \verb+\ul+ command in lieu of \verb+\underline+
+
+For units, check for space between a number and its unit (exceptions are percent \% and degree <sup><font face=symbol>°</font></sup>
+</td>
+<td nowrap align=center>
+   signs). Use Symbol font for micro (<font face=symbol>m</font>), not u or u. Latin words (\textitetc., et al., i.e.), and Latin names of species, (e.g. \textitE. coli) and web sites should be italicized in text and in references. In a sentence, spell out numbers under 10 instead of using a number (\textiti.e., use six and not 6).
+
+When you need to refer to \textbfFigure <a href="#refsample image">(0)</a>
+, \textbfTable <a href="#refsample table">(0)</a>
+, \textbfScheme 1, \textbfStep 1, and \textbfEquation <a href="#refequ1">(0)</a>
+ please bold those words in the text and in the title. The table itself should be centered.
+
+\begintable[htp!]
+\begincenter
+\begintabular | c | c | c | c |
+\hline
+ & \textbfColumn 1 & \textbfColumn 2 & \textbfColumn 3 <br>
+
+ \hline
+ \textbfRow 1 & a & b & c <br>
+
+ \hline
+\endtabular
+<font face=symbol>Ç</font>tionThe table itself should be centered. The title should be aligned to left or centered, whichever looks better. The table title In AJUR goes below the table and ends with a period. Please bold column and row titles.
+<a name="refsample table">
+
+\endcenter
+\endtable
+
+<h1>methods and procedures</h1>
+
+<h2>Subsections<font face=symbol>¢</font> titles should be mixed case and italicized.</h2>
+Use sections and subsections without numbers, by using \verb+<h1></h1>+ and \verb+<h2></h2>+ with an \verb+*+. Describe technical details of your work,<a href="#bib.0">[0]</a><a href="#bib.1">[1]</a> mention the IRB/IACUC permissions<font face=symbol>¢</font> numbers when working with humans/animals.
+
+<h1>results</h1>
+<h2>Subsections<font face=symbol>¢</font> titles should be mixed case and italicized.</h2>
+When referring to other sections (such as \textitIntroduction), italicize them. Figures should not be wrapped- regular text goes above and below them. Figures should be centered.
+
+\beginfigure[ht!]
+\centering
+ <font face=symbol>Î</font> cludegraphics[width=0.5\textwidth]Untitled.png
+<font face=symbol>Ç</font>tionFigure and scheme titles go below figures. Title may be left-aligned or centered, whichever looks better. It may be the width of the page or the width of the figure. There is no space between the figure and the figure title. Figure title ends with a period.<a name="refsample image">
+
+\endfigure
+
+<h1>discussion</h1>
+Use tables and figures as described above. Use proper referencing.<a href="#bib.2">[2]</a>
+
+All reaction schemes and mathematical equations, unless used in-line, must be centered and not wrapped. The associated scheme or equation number should be bolded, on the right hand side of the page with a period after it. When referring to  in text, do not period after the scheme number.
+
+
+<table cellspacing=0  border=0 align=center>
+<tr>
+  <td nowrap align="center">
+
+x= \dfrac<font face=symbol>-</font>b <font face=symbol>±</font>
+  </td>
+  <td>
+    <table cellspacing=0 border=0 >
+    <tr>
+      <td valign=bottom align=right style="border:none;"><font size="+2"><b>\</b></font></td>
+      <td align=left>
+        <table cellspacing=0  align=left class=sqrt>
+        <tr>
+          <td>
+            b<sup>2</sup> <font face=symbol>-</font> 4ac
+          </td>
+         </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align=center>
+    &nbsp;2a <a name="refequ1">
+
+<a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+</table>
+
+
+This is the appropriate way to display an equation.
+
+\beginverbatim
+
+<table cellspacing=0  border=0 align=center>
+<tr>
+  <td nowrap align="center">
+
+x= \dfrac<font face=symbol>-</font>b <font face=symbol>±</font>
+  </td>
+  <td>
+    <table cellspacing=0 border=0 >
+    <tr>
+      <td valign=bottom align=right style="border:none;"><font size="+2"><b>\</b></font></td>
+      <td align=left>
+        <table cellspacing=0  align=left class=sqrt>
+        <tr>
+          <td>
+            b<sup>2</sup> <font face=symbol>-</font> 4ac
+          </td>
+         </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align=center>
+    &nbsp;2a <a name="refequ1">
+
+<a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+  </td>
+</tr>
+</table>
+
+\endverbatim
+
+ Using the \\ method, the \verb+ [, ] + environment, and the \verb+equation*+ environment produce unnumbered equations and should be avoided.
+
+In multiline equations, label only the last line.
+
+\beginalign*
+x &= \dfrac-b <font face=symbol>±</font> <font face=symbol>Ö</font><span style="border-top:1 solid black;">b<sup>2</sup> - 4ac</span>2a <br>
+
+  &= 2 <font face=symbol>±</font> 3i <font face=symbol>n</font>m <a name="refeqn2">
+
+\endalign*
+
+This template automatically loads usual \verb+amsthm+ and \verb+amsmath+ packages.  Additional packages should be loaded in the preamble.
+
+<h1>conclusions</h1>
+Describe major outcomes, novelty, and significance of your work. Future work may be noted.
+
+<h1>acknowledgements</h1>
+This section is optional. The authors thank and not ``would like to thank<font face=symbol>¢</font><font face=symbol>¢</font> such and such an organization or person. Co-authors should not be listed here.
+
+<h1>notes on references</h1>
+
+Use no indents. Follow the style given in the examples (journals and serial publications;<a href="#bib.0">[0]</a> chapters and monographs;<a href="#bib.1">[1]</a> web sources,<a href="#bib.2">[2]</a> correspondingly) below. All references in text must be in order of appearance. Please include all authors, the complete title, and inclusive pagination, \textite.g., 1234--1237, not 1234--7; \ulplease make sure to use en-dash (in \LaTeX, use \verb+--+) \uland not the regular dash or em-dash to indicate duration between page numbers or years. The publication year should follow authors in parentheses. Supply DOI numbers whenever possible. \textitBook titles and \textitweb sites are italicized. \textitTitles of journals should be abbreviated according to http://www.abbreviations.com/jas.php. \textbf\ulReference accuracy is critical. It is authors responsibility to carefully check each reference.
+
+In the text, separate superscripted numbers by comma and space,<a href="#bib.0">[0]</a><a href="#bib.1">[1]</a> they should be separated by an en-dash if the consecutive list of more than two numbers is used.<a href="#bib.0">[0]</a><a href="#bib.1">[1]</a><a href="#bib.2">[2]</a> List them AFTER punctuation (be it comma or period) with no space.
+
+
+<ol start=0>
+
+
+<a name="bib.0"><li value=0> Marquez, V., Frohlich, T., Armache, J. P., Sohmen, D., Donhofer, A., Mikolajka, A., Berninghausen, O., Thomm, M., Beckmann, R., Arnold, G. J., and Wilson, D. N. (2011) Proteomic characterization of archaeal ribosomes reveals the presence of novel archaeal-specific ribosomal proteins, \textitJ Mol Biol 405, 1215--1232. \textit https://doi.org/10.33697/ajur.2019.003
+
+
+
+<a name="bib.1"><li value=1> Fierke, C. A., and Hammes, G. G. (1996) Transient Kinetic Approaches to Enzyme Mechanisms, in \textitContemporary Enzyme Kinetics and Mechanism (Purich, D., Ed.) 2nd ed., 1--35, Academic Press, New York.
+
+
+<a name="bib.2"><li value=2> Agricultural Research Service, U.S.D.A. National Nutrient Database for Standard Reference, Release 26, \textithttp://ndb.nal.usda.gov/ndb/search/list (accessed Mar 2014)
+
+</ol>
+
+
+<h1>about the student author</h1>
+John Smith and Jane Smith will graduate in <font face=symbol>¼</font>, \textitetc.
+
+<h1>NLP References</h1>
+https://web.stanford.edu/&nbsp;jurafsky/slp3/
+https://bib.dbvis.de/uploadedFiles/155.pdf (Distance Metrics)
+
+\enddocument
+
+<hr>
+<p><h1>Table Of Contents</h1>
+<p><a href="#toc.1"><h1>1&nbsp;0pt</h1></a>
+<p><a href="#toc.1.1"><h2>1.1&nbsp;0pt</h2></a>
+<p><a href="#toc.2"><h1>2&nbsp;Levenshtein</h1></a>
+<p><a href="#toc.3"><h1>3&nbsp;Longest Common Subsequence (LCS)</h1></a>
+<p><a href="#toc.4"><h1>4&nbsp;Hamming Distance</h1></a>
+<p><a href="#toc.5"><h1>5&nbsp;Damerau\–Levenshtein Distance</h1></a>
+<p><a href="#toc.6"><h1>6&nbsp;Jaro Distance</h1></a>
+<p><a href="#toc.7"><h1>7&nbsp;Bag Distance</h1></a>
+<p><a href="#toc.8"><h1>8&nbsp;Dependency Parsing</h1></a>
+<p><a href="#toc.9"><h1>9&nbsp;Constituency Parsing</h1></a>
+<p><a href="#toc.10"><h1>10&nbsp;Context-Free Grammar (PCFG)</h1></a>
+<p><a href="#toc.11"><h1>11&nbsp;Stochastic grammar</h1></a>
+</body>
 </html>
